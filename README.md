@@ -2,28 +2,28 @@
 
 **Free vocal pitch correction by VVO Audio** — natural, transparent tuning that sounds like the studio standard, with a hard-tune mode when you want the effect.
 
-**[⬇ Download the latest version](https://github.com/vvoaudio/vvotune-releases/releases/latest)**
+**[⬇ Download the latest version](https://github.com/vvoaudio/tunevvo-releases/releases/latest)**
 
 | | macOS Tahoe | macOS Universal | Windows |
 |---|---|---|---|
 | File | `TuneVVO-<version>-macOS.pkg` | `TuneVVO-<version>-macOS-Universal.pkg` | `TuneVVO-<version>-Windows-Setup.exe` |
 | Needs | macOS 26 Tahoe or later | macOS 11 Big Sur or later | Windows 10 or later · 64-bit |
 | Macs | Apple Silicon (M1 and later) or Intel | Apple Silicon (M1 and later) or Intel | — |
-| Format | VST3 | VST3 | VST3 |
-| Installs to | `/Library/Audio/Plug-Ins/VST3/` | `/Library/Audio/Plug-Ins/VST3/` | `C:\Program Files\Common Files\VST3\` |
+| Format | VST3 + Audio Unit (AU) | VST3 + Audio Unit (AU) | VST3 |
+| Installs to | `/Library/Audio/Plug-Ins/VST3/` and `/Library/Audio/Plug-Ins/Components/` | same | `C:\Program Files\Common Files\VST3\` |
 
 **Which Mac file?** On macOS 26 Tahoe either one works. On anything older (Big Sur 11, Monterey 12, Ventura 13, Sonoma 14, Sequoia 15) use the **Universal** file.
 It sounds identical — same plug-in, built to run on older macOS. It is also in the [`macOS-Universal`](macOS-Universal/) folder of this page.
 
 ## Install on Mac
-1. Download the `.pkg` (Universal if your Mac is older than macOS 26 Tahoe) from the [latest release](https://github.com/vvoaudio/vvotune-releases/releases/latest) and double-click it.
+1. Download the `.pkg` (Universal if your Mac is older than macOS 26 Tahoe) from the [latest release](https://github.com/vvoaudio/tunevvo-releases/releases/latest) and double-click it.
 2. macOS will say it can't verify the developer (TUNE VVO is free and not registered with Apple). Click **Done**, then open
    **System Settings → Privacy & Security**, scroll down and click **Open Anyway** next to the TuneVVO message. Confirm with your password.
 3. Click through the installer (it asks for your administrator password).
-4. Restart your DAW or rescan plug-ins, and load **TUNE VVO** from your VST3 plug-ins.
+4. Restart your DAW or rescan plug-ins, and load **TUNE VVO** from your VST3 or Audio Unit plug-ins (Logic and GarageBand use the Audio Unit).
 
 ## Install on Windows
-1. Download the `.exe` from the [latest release](https://github.com/vvoaudio/vvotune-releases/releases/latest) and run it.
+1. Download the `.exe` from the [latest release](https://github.com/vvoaudio/tunevvo-releases/releases/latest) and run it.
 2. If Windows shows **"Windows protected your PC"**, click **More info → Run anyway** (TUNE VVO is free and not code-signed).
 3. Click through the installer (it asks for administrator permission).
 4. Restart your DAW or rescan plug-ins, and load **TUNE VVO** from your VST3 plug-ins.
@@ -47,9 +47,10 @@ To turn the check off, right-click the button and choose **Turn off update check
 - **Hard Tune** — holds the note even through wide vibrato for a steadier, flatter robotic effect. Off = natural note changes.
 - **Low Latency** — about 3 ms delay for recording while monitoring through the plug-in (normal mode: 15 ms, fully compensated by your DAW).
 - **Presets** — **Save Preset** stores Retune, Strength, Hard Tune, Low Latency and the scale (not the key). **Default** is always available.
+- **Settings (gear, top right)** — **Theme**: choose **Dark** (the original black rack faceplate) or **Light** (weathered silver). **Particle animation**: untick it to remove all particles from the glass and keep CPU use low; ticked, the particles move at your monitor's refresh rate, in step with the screen. Both choices are remembered.
 
 ## Uninstall
-- **Mac:** delete `/Library/Audio/Plug-Ins/VST3/TuneVVO.vst3`.
+- **Mac:** delete `/Library/Audio/Plug-Ins/VST3/TuneVVO.vst3` and `/Library/Audio/Plug-Ins/Components/TuneVVO.component`.
 - **Windows:** Settings → Apps → **TUNE VVO (VST3)** → Uninstall.
 
 Presets and saved scales live in `~/Library/Application Support/VvoTune` (Mac) or `%APPDATA%\VvoTune` (Windows).
