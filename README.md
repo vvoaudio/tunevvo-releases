@@ -1,4 +1,71 @@
-# TUNE VVO
+# TUNE VVO (Português)
+
+*[Read in English ↓](#tune-vvo-english)*
+
+**Correção de afinação vocal gratuita, da VVO Audio** — afinação natural e transparente, com o som do padrão de estúdio, e um modo hard-tune para quando você quiser o efeito.
+
+**[⬇ Baixar a versão mais recente](https://github.com/vvoaudio/tunevvo-releases/releases/latest)**
+
+| | macOS Tahoe | macOS Universal | Windows |
+|---|---|---|---|
+| Arquivo | `TuneVVO-<versão>-macOS.pkg` | `TuneVVO-<versão>-macOS-Universal.pkg` | `TuneVVO-<versão>-Windows-Setup.exe` |
+| Requisito | macOS 26 Tahoe ou posterior | macOS 11 Big Sur ou posterior | Windows 10 ou posterior · 64 bits |
+| Macs | Apple Silicon (M1 e posteriores) ou Intel | Apple Silicon (M1 e posteriores) ou Intel | — |
+| Formato | VST3 + Audio Unit (AU) | VST3 + Audio Unit (AU) | VST3 |
+| Instala em | `/Library/Audio/Plug-Ins/VST3/` e `/Library/Audio/Plug-Ins/Components/` | igual | `C:\Program Files\Common Files\VST3\` |
+
+**Qual arquivo para Mac?** No macOS 26 Tahoe, qualquer um dos dois funciona. Em versões mais antigas (Big Sur 11, Monterey 12, Ventura 13, Sonoma 14, Sequoia 15), use o arquivo **Universal**.
+O som é idêntico — é o mesmo plugin, compilado para rodar em macOS mais antigos. Ele também está na pasta [`macOS-Universal`](macOS-Universal/) desta página.
+
+## Instalar no Mac
+1. Baixe o `.pkg` (Universal, se o seu Mac for anterior ao macOS 26 Tahoe) na [versão mais recente](https://github.com/vvoaudio/tunevvo-releases/releases/latest) e dê dois cliques nele.
+2. O macOS vai avisar que não consegue verificar o desenvolvedor (o TUNE VVO é gratuito e não está registrado na Apple). Clique em **Concluído** e abra
+   **Ajustes do Sistema → Privacidade e Segurança** (em inglês: **System Settings → Privacy & Security**), role até o fim e clique em **Abrir Mesmo Assim** (**Open Anyway**) ao lado da mensagem do TuneVVO. Confirme com a sua senha.
+3. Siga o instalador (ele pede a senha de administrador).
+4. Reinicie a sua DAW ou procure plugins novamente (rescan) e carregue o **TUNE VVO** entre os plugins VST3 ou Audio Unit (o Logic e o GarageBand usam o Audio Unit).
+
+## Instalar no Windows
+1. Baixe o `.exe` na [versão mais recente](https://github.com/vvoaudio/tunevvo-releases/releases/latest) e execute-o.
+2. Se o Windows mostrar **"O Windows protegeu seu computador"**, clique em **Mais informações → Executar mesmo assim** (**More info → Run anyway**). O TUNE VVO é gratuito e não tem assinatura de código.
+3. Siga o instalador (ele pede permissão de administrador).
+4. Reinicie a sua DAW ou procure plugins novamente (rescan) e carregue o **TUNE VVO** entre os plugins VST3.
+
+## Atualizando
+Já tem o TUNE VVO (ou o nome antigo, VvoTune)? Feche a sua DAW e execute o novo instalador da mesma forma. Ele substitui a versão antiga
+(inclusive uma cópia antiga na sua pasta pessoal de plugins) e mantém os seus presets, as escalas salvas e os projetos:
+as sessões abrem com os mesmos ajustes e o mesmo som.
+
+### Aviso de atualização (a partir da versão que o inclui)
+Uma vez por dia o TUNE VVO pergunta ao GitHub qual é a versão mais recente (uma única requisição a `api.github.com`; nada mais é enviado). Se existir uma versão nova,
+aparece o botão **UPDATE AVAILABLE!** no alto da janela. Clique nele: o instalador do seu sistema é baixado, conferido com o checksum
+SHA-256 publicado e aberto. Feche a sua DAW e conclua o instalador, como acima. Nada é instalado sem você.
+Para desligar a verificação, clique com o botão direito no botão e escolha **Turn off update checks** (ou crie um arquivo vazio chamado `update-checks-off` em
+`~/Library/Application Support/VvoTune/` no Mac, ou `%APPDATA%\VvoTune\` no Windows). Apague esse arquivo para religar a verificação.
+
+## Guia rápido
+- **Key / Scale** — escolha a tonalidade e a escala da música, ou clique no teclado para ligar e desligar notas (adicione notas fora da escala, retire notas dela). **Save Scale** guarda os seus próprios conjuntos de notas.
+- **Retune Speed** — a velocidade com que as notas são puxadas para a afinação. 0–20 ms: seca, efeito hard-tune; 20–100 ms: natural; 100–400 ms: suave, com o vibrato preservado. A cor do anel mostra o quanto o plugin está trabalhando.
+- **Strength** — quanto da correção é aplicada (0 % = sem correção).
+- **Hard Tune** — segura a nota mesmo com vibrato largo, para um efeito robótico mais firme e plano. Desligado = trocas de nota naturais.
+- **Low Latency** — cerca de 3 ms de atraso, para gravar monitorando pelo plugin (modo normal: 15 ms, totalmente compensado pela sua DAW).
+- **Presets** — **Save Preset** guarda Retune, Strength, Hard Tune, Low Latency e a escala (não a tonalidade). O preset **Default** está sempre disponível.
+- **Settings (engrenagem, canto superior direito)** — **Theme**: escolha **Dark** (o painel preto original do rack) ou **Light** (prata envelhecida). **Particle animation**: desmarque para tirar todas as partículas do vidro e manter o uso de CPU baixo; marcada, as partículas se movem na taxa de atualização do seu monitor, em sincronia com a tela. As duas escolhas ficam salvas.
+
+## Desinstalar
+- **Mac:** apague `/Library/Audio/Plug-Ins/VST3/TuneVVO.vst3` e `/Library/Audio/Plug-Ins/Components/TuneVVO.component`.
+- **Windows:** Configurações → Aplicativos → **TUNE VVO (VST3)** → Desinstalar.
+
+Os presets e as escalas salvas ficam em `~/Library/Application Support/VvoTune` (Mac) ou `%APPDATA%\VvoTune` (Windows).
+
+---
+O TUNE VVO é gratuito para uso pessoal e fornecido no estado em que se encontra, sem garantia. VST é uma marca registrada da Steinberg Media Technologies GmbH.
+Licenças de terceiros: veja [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
+
+---
+
+# TUNE VVO (English)
+
+*[Ler em português ↑](#tune-vvo-português)*
 
 **Free vocal pitch correction by VVO Audio** — natural, transparent tuning that sounds like the studio standard, with a hard-tune mode when you want the effect.
 
