@@ -2,9 +2,15 @@
 
 *[Read in English ↓](#tune-vvo-english)*
 
+![TUNE VVO particle glass frame](https://raw.githubusercontent.com/vvoaudio/tunevvo-releases/main/media/tune-vvo-glass-frame.png)
+
 **Correção de afinação vocal gratuita, da VVO Audio** — afinação natural e transparente, com o som do padrão de estúdio, e um modo hard-tune para quando você quiser o efeito.
 
 **[⬇ Baixar a versão mais recente](https://github.com/vvoaudio/tunevvo-releases/releases/latest)**
+
+![TUNE VVO, interface completa, tema Dark](https://raw.githubusercontent.com/vvoaudio/tunevvo-releases/main/media/tune-vvo-full-ui.png)
+
+![TUNE VVO, interface completa, tema Light](https://raw.githubusercontent.com/vvoaudio/tunevvo-releases/main/media/tune-vvo-light.png)
 
 | | macOS Tahoe | macOS Universal | Windows |
 |---|---|---|---|
@@ -69,7 +75,13 @@ Licenças de terceiros: veja [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
 
 **Free vocal pitch correction by VVO Audio** — natural, transparent tuning that sounds like the studio standard, with a hard-tune mode when you want the effect.
 
+![TUNE VVO particle glass frame](https://raw.githubusercontent.com/vvoaudio/tunevvo-releases/main/media/tune-vvo-glass-frame.png)
+
 **[⬇ Download the latest version](https://github.com/vvoaudio/tunevvo-releases/releases/latest)**
+
+![TUNE VVO full interface, Dark theme](https://raw.githubusercontent.com/vvoaudio/tunevvo-releases/main/media/tune-vvo-full-ui.png)
+
+![TUNE VVO full interface, Light theme](https://raw.githubusercontent.com/vvoaudio/tunevvo-releases/main/media/tune-vvo-light.png)
 
 | | macOS Tahoe | macOS Universal | Windows |
 |---|---|---|---|
