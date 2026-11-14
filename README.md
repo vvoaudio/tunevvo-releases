@@ -12,19 +12,18 @@
 
 ![TUNE VVO, interface completa, tema Light](https://raw.githubusercontent.com/vvoaudio/tunevvo-releases/main/media/tune-vvo-light.png)
 
-| | macOS Tahoe | macOS Universal | Windows |
-|---|---|---|---|
-| Arquivo | `TuneVVO-<versão>-macOS.pkg` | `TuneVVO-<versão>-macOS-Universal.pkg` | `TuneVVO-<versão>-Windows-Setup.exe` |
-| Requisito | macOS 26 Tahoe ou posterior | macOS 11 Big Sur ou posterior | Windows 10 ou posterior · 64 bits |
-| Macs | Apple Silicon (M1 e posteriores) ou Intel | Apple Silicon (M1 e posteriores) ou Intel | — |
-| Formato | VST3 + Audio Unit (AU) | VST3 + Audio Unit (AU) | VST3 |
-| Instala em | `/Library/Audio/Plug-Ins/VST3/` e `/Library/Audio/Plug-Ins/Components/` | igual | `C:\Program Files\Common Files\VST3\` |
+|  | macOS | Windows |
+|---|---|---|
+| Arquivo | `TuneVVO-<versão>-macOS-Universal.pkg` | `TuneVVO-<versão>-Windows-Setup.exe` |
+| Requisito | macOS 11 Big Sur ou posterior | Windows 10 ou posterior · 64 bits |
+| Macs | Apple Silicon (M1 e posteriores) ou Intel | — |
+| Formato | VST3 + Audio Unit (AU) | VST3 |
+| Instala em | `/Library/Audio/Plug-Ins/VST3/` e `/Library/Audio/Plug-Ins/Components/` | `C:\Program Files\Common Files\VST3\` |
 
-**Qual arquivo para Mac?** No macOS 26 Tahoe, qualquer um dos dois funciona. Em versões mais antigas (Big Sur 11, Monterey 12, Ventura 13, Sonoma 14, Sequoia 15), use o arquivo **Universal**.
-O som é idêntico — é o mesmo plugin, compilado para rodar em macOS mais antigos. Ele também está na pasta [`macOS-Universal`](macOS-Universal/) desta página.
+**Um único instalador para Mac:** o arquivo Universal serve para todos os Macs, do macOS 11 Big Sur ao macOS 26 Tahoe, Apple Silicon ou Intel. Ele também está na pasta [`macOS-Universal`](macOS-Universal/) desta página.
 
 ## Instalar no Mac
-1. Baixe o `.pkg` (Universal, se o seu Mac for anterior ao macOS 26 Tahoe) na [versão mais recente](https://github.com/vvoaudio/tunevvo-releases/releases/latest) e dê dois cliques nele.
+1. Baixe o `.pkg` na [versão mais recente](https://github.com/vvoaudio/tunevvo-releases/releases/latest) e dê dois cliques nele.
 2. O macOS vai avisar que não consegue verificar o desenvolvedor (o TUNE VVO é gratuito e não está registrado na Apple). Clique em **Concluído** e abra
    **Ajustes do Sistema → Privacidade e Segurança** (em inglês: **System Settings → Privacy & Security**), role até o fim e clique em **Abrir Mesmo Assim** (**Open Anyway**) ao lado da mensagem do TuneVVO. Confirme com a sua senha.
 3. Siga o instalador (ele pede a senha de administrador).
@@ -83,19 +82,18 @@ Licenças de terceiros: veja [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
 
 ![TUNE VVO full interface, Light theme](https://raw.githubusercontent.com/vvoaudio/tunevvo-releases/main/media/tune-vvo-light.png)
 
-| | macOS Tahoe | macOS Universal | Windows |
-|---|---|---|---|
-| File | `TuneVVO-<version>-macOS.pkg` | `TuneVVO-<version>-macOS-Universal.pkg` | `TuneVVO-<version>-Windows-Setup.exe` |
-| Needs | macOS 26 Tahoe or later | macOS 11 Big Sur or later | Windows 10 or later · 64-bit |
-| Macs | Apple Silicon (M1 and later) or Intel | Apple Silicon (M1 and later) or Intel | — |
-| Format | VST3 + Audio Unit (AU) | VST3 + Audio Unit (AU) | VST3 |
-| Installs to | `/Library/Audio/Plug-Ins/VST3/` and `/Library/Audio/Plug-Ins/Components/` | same | `C:\Program Files\Common Files\VST3\` |
+|  | macOS | Windows |
+|---|---|---|
+| File | `TuneVVO-<version>-macOS-Universal.pkg` | `TuneVVO-<version>-Windows-Setup.exe` |
+| Needs | macOS 11 Big Sur or later | Windows 10 or later · 64-bit |
+| Macs | Apple Silicon (M1 and later) or Intel | — |
+| Format | VST3 + Audio Unit (AU) | VST3 |
+| Installs to | `/Library/Audio/Plug-Ins/VST3/` and `/Library/Audio/Plug-Ins/Components/` | `C:\Program Files\Common Files\VST3\` |
 
-**Which Mac file?** On macOS 26 Tahoe either one works. On anything older (Big Sur 11, Monterey 12, Ventura 13, Sonoma 14, Sequoia 15) use the **Universal** file.
-It sounds identical — same plug-in, built to run on older macOS. It is also in the [`macOS-Universal`](macOS-Universal/) folder of this page.
+**One Mac installer:** the Universal file works on every Mac, from macOS 11 Big Sur to macOS 26 Tahoe, Apple Silicon or Intel. It is also in the [`macOS-Universal`](macOS-Universal/) folder of this page.
 
 ## Install on Mac
-1. Download the `.pkg` (Universal if your Mac is older than macOS 26 Tahoe) from the [latest release](https://github.com/vvoaudio/tunevvo-releases/releases/latest) and double-click it.
+1. Download the `.pkg` from the [latest release](https://github.com/vvoaudio/tunevvo-releases/releases/latest) and double-click it.
 2. macOS will say it can't verify the developer (TUNE VVO is free and not registered with Apple). Click **Done**, then open
    **System Settings → Privacy & Security**, scroll down and click **Open Anyway** next to the TuneVVO message. Confirm with your password.
 3. Click through the installer (it asks for your administrator password).
